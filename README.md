@@ -1,1 +1,1 @@
-#An animated Natal Chart made with p5.js
+an animated Natal Chart made with p5.js
