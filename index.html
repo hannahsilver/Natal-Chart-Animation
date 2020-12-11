@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/cat-style.css">
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="/cat-script.js" defer></script>
+  
+  </head>  
+  <body>
+    
+    <div id="writing">
+          <h1>Open Swim</h1>
+            <div class="cat">
+              <input type="range" id="longcat1" name="longcat1" min="69" max="205" value="90">
+            <img src="https://pngimg.com/uploads/fish/fish_PNG25175.png" width="200px" height="100px">
+            </div>
+          <p>
+            please, dive in. the water's warm ;^).
+          </p>
+        </div>
+
+    <div id="canvas"> 
+      
+    </div>
+    <script>
+      var r;
+      var g;
+      var b;
+      function setup(){
+        var canv = createCanvas(windowWidth, windowHeight);
+        canv.parent("canvas");
+        // background(3, 252, 211);
+        r = random(255);
+        g = random(255);
+        b = random(255);
+      }
+      function draw(){
+        // noStroke();
+        stroke(b, r, g);
+        fill(r, g, b);
+       
+        triangle(mouseX, mouseY, 200, 300, 500, 200);
+         
+      }
+      function mousePressed(){
+        r = random(200);
+         g = random(255);
+        b = random(255);
+      }
+    </script>
+  </body>
+</html>
